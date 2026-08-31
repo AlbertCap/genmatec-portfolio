@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genmate C — Team Portfolio</title>
+<meta name="description" content="Genmate C — ทีมที่รวมจุดแข็งหลากหลายเข้าไว้ด้วยกัน ทำงานเป็นหนึ่งเดียว">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="logo"><span class="logo-dot"></span>Genmate C</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#chemistry">Chemistry</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="hero">
+  <div class="hero-blob one"></div>
+  <div class="hero-blob two"></div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow">A team of five, one direction</p>
+    <h1>Genmate C</h1>
+    <p class="hero-tagline">ห้าคน ห้าจุดแข็งที่ไม่เหมือนกัน แต่เมื่อรวมกันแล้วเสริมกันได้อย่างลงตัว — นี่คือทีมของเรา</p>
+    <div class="hero-cta">
+      <a href="#team" class="btn btn-primary">Meet the Team</a>
+      <a href="#about" class="btn btn-secondary">About Us</a>
+    </div>
+    <div class="hero-avatars">
+      <div class="avatar-stack">
+        <img class="mini-avatar" src="members/Fon.jpg" alt="Fon">
+        <img class="mini-avatar" src="members/Albert.jpg" alt="Albert">
+        <div class="mini-avatar initials" style="background:linear-gradient(135deg,#5b5fee,#7c6cf0)">T</div>
+        <img class="mini-avatar" src="members/Nick.jpg" alt="Nick">
+        <div class="mini-avatar initials" style="background:linear-gradient(135deg,#14b8a6,#0e9488)">F</div>
+      </div>
+      <span class="hero-avatars-label">Fon · Albert · Tony · Nick · Focus</span>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-copy reveal">
+      <p class="eyebrow">About the team</p>
+      <h2 style="font-size:clamp(1.6rem,3vw,2.2rem); margin-bottom:18px;">คนละแบบ แต่ทำงานเป็นทีมเดียวกัน</h2>
+      <p>Genmate C คือทีมที่เกิดจากการรวมตัวของคน 5 คนที่มีบุคลิก มุมมอง และจุดแข็งต่างกันโดยสิ้นเชิง — ตั้งแต่คนที่แก้ปัญหาเฉพาะหน้าเก่ง ไปจนถึงคนที่มองเห็นภาพอนาคตของทีม เราเชื่อว่าความหลากหลายแบบนี้เองที่ทำให้ทีมแข็งแรง เพราะทุกคนเติมเต็มจุดที่อีกคนขาดได้พอดี</p>
+      <p>ในแต่ละการ์ดของสมาชิก คุณจะได้เห็นสองมุมมอง — มุมที่แต่ละคน "อยากพรีเซนต์ตัวเอง" และมุมที่ "เพื่อนในทีมมองเห็น" ลองสลับดูมุมมองของแต่ละคนได้เลย</p>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="num">5</div>
+          <div class="label">สมาชิกในทีม</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">2</div>
+          <div class="label">มุมมองต่อคน: Self &amp; Team</div>
+        </div>
+      </div>
+    </div>
+    <div class="about-note reveal">
+      <strong>Project details</strong>
+      <p>เว้นที่ตรงนี้ไว้สำหรับใส่รายละเอียดโปรเจกต์ของทีม เช่น ทีมนี้ทำงานเกี่ยวกับอะไร กำลังทำโปรเจกต์ไหนอยู่ เป้าหมายของทีมคืออะไร หรือผลงานเด่นที่ผ่านมา — แก้ไขข้อความส่วนนี้ใน <code>index.html</code> (section id="about") ได้โดยตรง</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Team members</p>
+      <h2>รู้จักสมาชิกแต่ละคน</h2>
+      <p>คลิกหรือชี้ที่การ์ดเพื่อสลับมุมมอง จาก "ฉันคือใคร" ไปสู่ "ทีมมองฉันว่ายังไง"</p>
+    </div>
+
+    <div class="team-grid reveal-stagger">
+
+      <!-- Fon -->
+      <div class="member-card" data-accent="orange" tabindex="0" role="button" aria-pressed="false" aria-label="Fon — flip card">
+        <div class="card-inner">
+          <div class="card-face card-front">
+            <div class="avatar-wrap">
+              <div class="avatar-ring"><img src="members/Fon.jpg" alt="Fon"></div>
+              <a class="gh-badge" href="https://github.com/Phoneoffond" target="_blank" rel="noopener" aria-label="Fon on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 015.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.73 18.27.5 12 .5z"/></svg></a>
+            </div>
+            <h3>Fon</h3>
+            <span class="role-badge">I am...</span>
+            <p class="card-desc">แก้ปัญหาเฉพาะหน้าเก่ง คิดแบบเป็นองค์ประกอบ ทำเรื่องยากให้เป็นเรื่องง่าย สื่อสารชัดเจน บริหารเวลาเก่งทั้งงานทีมและงานส่วนตัว เรียนรู้ไว เข้าอกเข้าใจผู้อื่น พยายามสูง ทุ่มเท</p>
+            <div class="tag-row">
+              <span class="tag-chip">แก้ปัญหาเฉพาะหน้า</span>
+              <span class="tag-chip">คิดเป็นระบบ</span>
+              <span class="tag-chip">บริหารเวลาเก่ง</span>
+            </div>
+            <button class="flip-hint" type="button">The team sees me as <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+          <div class="card-face card-back">
+            <span class="role-badge">The team sees me as...</span>
+            <p class="empty-reflection">ยังไม่มีมุมมองแยกจากทีมสำหรับ Fon — ทีมเห็นตรงกับที่ Fon พรีเซนต์ตัวเองไว้ทุกข้อ</p>
+            <button class="flip-hint" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Back to "I am..."</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Albert -->
+      <div class="member-card" data-accent="mint" tabindex="0" role="button" aria-pressed="false" aria-label="Albert — flip card">
+        <div class="card-inner">
+          <div class="card-face card-front">
+            <div class="avatar-wrap">
+              <div class="avatar-ring"><img src="members/Albert.jpg" alt="Albert"></div>
+              <a class="gh-badge" href="https://github.com/AlbertCap" target="_blank" rel="noopener" aria-label="Albert on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 015.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.73 18.27.5 12 .5z"/></svg></a>
+            </div>
+            <h3>Albert</h3>
+            <span class="role-badge">I am...</span>
+            <p class="card-desc">ยืดหยุ่น ปรับตัวไว เรียนรู้เร็ว สนใจ mobile app / สาย finance / สาย dev</p>
+            <div class="tag-row">
+              <span class="tag-chip">ปรับตัวไว</span>
+              <span class="tag-chip">เรียนรู้เร็ว</span>
+              <span class="tag-chip">Mobile · Finance · Dev</span>
+              <span class="tag-chip">Full Stack Developer</span>
+            </div>
+            <button class="flip-hint" type="button">The team sees me as <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+          <div class="card-face card-back">
+            <span class="role-badge">The team sees me as...</span>
+            <p class="card-desc">ฉลาด ใจดี ใจเย็น พร้อมช่วยเหลือทุกคน อารมณ์ดี เข้ากับคนง่าย</p>
+            <div class="tag-row">
+              <span class="tag-chip">ใจเย็น ใจดี</span>
+              <span class="tag-chip">พร้อมช่วยเหลือ</span>
+              <span class="tag-chip">เข้ากับคนง่าย</span>
+            </div>
+            <button class="flip-hint" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Back to "I am..."</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tony -->
+      <div class="member-card" data-accent="orange" tabindex="0" role="button" aria-pressed="false" aria-label="Tony — flip card">
+        <div class="card-inner">
+          <div class="card-face card-front">
+            <div class="avatar-wrap">
+              <div class="avatar-ring initials">T</div>
+              <a class="gh-badge" href="https://github.com/nitichaya-gk/" target="_blank" rel="noopener" aria-label="Tony on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 015.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.73 18.27.5 12 .5z"/></svg></a>
+            </div>
+            <h3>Tony</h3>
+            <span class="role-badge">I am...</span>
+            <p class="card-desc">เข้ากับคนง่าย สนใจ AI ปรับตัวเข้ากับสถานการณ์ได้หลากหลาย</p>
+            <div class="tag-row">
+              <span class="tag-chip">เข้ากับคนง่าย</span>
+              <span class="tag-chip">สนใจ AI</span>
+              <span class="tag-chip">ปรับตัวได้หลากหลาย</span>
+            </div>
+            <button class="flip-hint" type="button">The team sees me as <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+          <div class="card-face card-back">
+            <span class="role-badge">The team sees me as...</span>
+            <p class="card-desc">มีภาวะผู้นำ ใจดี ขยันเรียนรู้สิ่งใหม่ ถอดบทเรียนจากชีวิตเก่ง</p>
+            <div class="tag-row">
+              <span class="tag-chip">ภาวะผู้นำ</span>
+              <span class="tag-chip">ขยันเรียนรู้</span>
+              <span class="tag-chip">ถอดบทเรียนเก่ง</span>
+            </div>
+            <button class="flip-hint" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Back to "I am..."</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nick -->
+      <div class="member-card" data-accent="mint" tabindex="0" role="button" aria-pressed="false" aria-label="Nick — flip card">
+        <div class="card-inner">
+          <div class="card-face card-front">
+            <div class="avatar-wrap">
+              <div class="avatar-ring"><img src="members/Nick.jpg" alt="Nick"></div>
+              <a class="gh-badge" href="https://github.com/supakornprapis-oss" target="_blank" rel="noopener" aria-label="Nick on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 015.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.73 18.27.5 12 .5z"/></svg></a>
+            </div>
+            <h3>Nick</h3>
+            <span class="role-badge">I am...</span>
+            <p class="card-desc">ชอบเรียนรู้ เปิดกว้าง ผ่านการฝึกอบรมหลากหลาย อดทนสม่ำเสมอ</p>
+            <div class="tag-row">
+              <span class="tag-chip">ชอบเรียนรู้</span>
+              <span class="tag-chip">เปิดกว้าง</span>
+              <span class="tag-chip">อดทนสม่ำเสมอ</span>
+            </div>
+            <button class="flip-hint" type="button">The team sees me as <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+          <div class="card-face card-back">
+            <span class="role-badge">The team sees me as...</span>
+            <p class="card-desc">เฮฮา สนุกสนาน ร่าเริง มองโลกในแง่ดี ขยันขันแข็ง</p>
+            <div class="tag-row">
+              <span class="tag-chip">เฮฮาสนุกสนาน</span>
+              <span class="tag-chip">มองโลกแง่ดี</span>
+              <span class="tag-chip">ขยันขันแข็ง</span>
+            </div>
+            <button class="flip-hint" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Back to "I am..."</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Focus -->
+      <div class="member-card" data-accent="orange" tabindex="0" role="button" aria-pressed="false" aria-label="Focus — flip card">
+        <div class="card-inner">
+          <div class="card-face card-front">
+            <div class="avatar-wrap">
+              <div class="avatar-ring initials">F</div>
+              <a class="gh-badge" href="https://github.com/TonySmitch/" target="_blank" rel="noopener" aria-label="Focus on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 015.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.73 18.27.5 12 .5z"/></svg></a>
+            </div>
+            <h3>Focus</h3>
+            <span class="role-badge">I am...</span>
+            <p class="card-desc">สกิลสื่อสารดี มีความสุขกับทุกเรื่อง มองโลกแง่ดี สร้างสรรค์ ชอบทำงานร่วมกับผู้อื่น</p>
+            <div class="tag-row">
+              <span class="tag-chip">สื่อสารดี</span>
+              <span class="tag-chip">มองโลกแง่ดี</span>
+              <span class="tag-chip">สร้างสรรค์</span>
+              <span class="tag-chip">Full Stack Developer</span>
+            </div>
+            <button class="flip-hint" type="button">The team sees me as <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+          <div class="card-face card-back">
+            <span class="role-badge">The team sees me as...</span>
+            <p class="card-desc">Critical thinking ดี ร้องเพลงเก่ง มองเห็นอนาคต มี vision วางแผนไกล เตรียมพร้อมอนาคต</p>
+            <div class="tag-row">
+              <span class="tag-chip">Critical Thinking</span>
+              <span class="tag-chip">มี Vision</span>
+              <span class="tag-chip">วางแผนไกล</span>
+            </div>
+            <button class="flip-hint" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Back to "I am..."</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CHEMISTRY -->
+<section class="chemistry" id="chemistry">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Team chemistry</p>
+      <h2>ทำไมทีมนี้ถึงไปด้วยกันได้ดี</h2>
+    </div>
+    <p class="chem-copy reveal">จุดแข็งของแต่ละคนไม่ได้ซ้ำกันเลย — คนหนึ่งแก้ปัญหาเฉพาะหน้าไว อีกคนมองเห็นภาพใหญ่ในอนาคต คนหนึ่งสร้างพลังบวกให้ทีม อีกคนพาทุกคนไปข้างหน้าอย่างมั่นคง เมื่อทุกจุดแข็งมารวมกัน ทีม Genmate C จึงครบทั้งความคิด ความรู้สึก และการลงมือทำ</p>
+    <div class="cloud reveal">
+      <span class="cloud-tag o size-lg">แก้ปัญหาไว</span>
+      <span class="cloud-tag m size-md">คิดเป็นระบบ</span>
+      <span class="cloud-tag o size-sm">ปรับตัวเก่ง</span>
+      <span class="cloud-tag m size-lg">AI</span>
+      <span class="cloud-tag o size-md">ภาวะผู้นำ</span>
+      <span class="cloud-tag m size-sm">เรียนรู้เร็ว</span>
+      <span class="cloud-tag o size-lg">มองโลกบวก</span>
+      <span class="cloud-tag m size-md">สื่อสารดี</span>
+      <span class="cloud-tag o size-sm">Vision</span>
+      <span class="cloud-tag m size-md">วางแผนไกล</span>
+      <span class="cloud-tag o size-md">ใจเย็น</span>
+      <span class="cloud-tag m size-sm">ขยันขันแข็ง</span>
+      <span class="cloud-tag o size-lg">สร้างสรรค์</span>
+      <span class="cloud-tag m size-md">เข้ากับคนง่าย</span>
+      <span class="cloud-tag o size-sm">ทุ่มเท</span>
+      <span class="cloud-tag m size-lg">เฮฮาสนุกสนาน</span>
+      <span class="cloud-tag o size-md">Mobile &amp; Finance</span>
+      <span class="cloud-tag m size-sm">Critical Thinking</span>
+      <span class="cloud-tag o size-md">ถอดบทเรียนเก่ง</span>
+      <span class="cloud-tag m size-md">บริหารเวลาเก่ง</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / FOOTER -->
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="eyebrow" style="background:rgba(255,255,255,0.1); color:#ffb98f;">Get in touch</p>
+        <h2>อยากร่วมงานกับ Genmate C?</h2>
+        <p>ทักมาคุยกันได้เลย ไม่ว่าจะเป็นโปรเจกต์ ความร่วมมือ หรือแค่อยากทักทาย</p>
+      </div>
+      <div class="footer-contact">
+        <a class="footer-link" href="mailto:hello@genmatec.team">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg></span>
+          hello@genmatec.team
+        </a>
+        <a class="footer-link" href="#">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20 15 15 0 010-20z"/></svg></span>
+          genmatec.team (โปรเจกต์ / เว็บไซต์)
+        </a>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-9h3l.5-3.5H13V7.3c0-1 .4-1.8 1.9-1.8H17V2.2C16.6 2.1 15.4 2 14 2c-3 0-5 1.8-5 5.1V9.5H6V13h3v9h4z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 11-4-.02 2 2 0 014 .02zM3 8.5h4V21H3zM10 8.5h3.8v1.7h.05c.53-1 1.83-2.07 3.77-2.07 4.03 0 4.78 2.65 4.78 6.1V21h-4v-6.1c0-1.45-.03-3.32-2.02-3.32-2.02 0-2.33 1.58-2.33 3.2V21h-4z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Genmate C. All rights reserved.</span>
+      <span>Made with care by five different minds, one team.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
